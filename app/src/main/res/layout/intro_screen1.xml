@@ -7,10 +7,11 @@
     android:background="#fff"
     tools:context=".CustomizedActivity">
 
-    <!--<androidx.viewpager.widget.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />-->
+        android:layout_height="match_parent" />
+
 
     <ImageView
         android:id="@+id/img_customized"
@@ -74,7 +75,7 @@
 
     </HorizontalScrollView>
 
-    <!--<LinearLayout
+    <LinearLayout
         android:id="@+id/dotsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,6 +106,6 @@
         android:layout_marginBottom="70dp"
         android:text="@string/back"
         android:textSize="16sp"
-        android:visibility="invisible" />-->
+        android:visibility="invisible" />
 
 </RelativeLayout>

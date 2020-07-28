@@ -114,6 +114,7 @@ public class CustomizedActivity extends AppCompatActivity implements View.OnClic
 
     private void backSlide() {
         int next_slide = mPager.getCurrentItem() - 1;
+        //bnSkip.setVisibility(View.INVISIBLE);
         if (next_slide < layouts.length) {
             mPager.setCurrentItem(next_slide);
         }
