@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Mental Health</string>
+    <string name="next">next</string>
+    <string name="more_text_1">Keep a personal diary, without writting down a single word just pick your mood and activities anytime you feel like it.</string>
+    <string name="more_text_2">By usinng this application you agree to its terms of use</string>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#39d1ba</color>
+    <color name="dot_dark_screen2">#14a895</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8de7f9</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+    <array name="languages">
+        <item>English</item>
+        <!-- <item>Dansk</item>
+        <item>Deutsch</item>
+        <item>Espanol</item>
+        <item>Francias</item>-->
+    </array>
+    <!--  Slide 1  -->
+    <string name="slide_1_title">Title 1</string>
+    <string name="slide_1_desc">Description 1</string>
+
+    <!--  Slide 2  -->
+    <string name="slide_2_title">Title 2</string>
+    <string name="slide_2_desc">Description 2</string>
+
+    <!--  Slide 3  -->
+    <string name="slide_3_title">Title 3</string>
+    <string name="slide_3_desc">Description 3</string>
+
+    <string name="my_prefrence">com.abc.com.MyPref</string>
+    <string name="my_prefrence_key">com.abc.com.MyPrefKey</string>
+    <string name="back"><![CDATA[< Back]]></string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
