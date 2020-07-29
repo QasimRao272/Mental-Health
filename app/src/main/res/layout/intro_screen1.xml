@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,100 +12,158 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
-    <ImageView
-        android:id="@+id/img_customized"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/image_language_activity" />
-
-    <TextView
-        android:id="@+id/customise_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/img_customized"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30sp"
-        android:text="Customize Your Moods"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/customise_text"
-        android:layout_margin="30dp"
-        android:text="Match the color or your Mood to your personality. Later you can change emojis, names and even add new ones."
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_emojis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv"
-        android:layout_marginLeft="20dp"
-        android:text="Emojis"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <HorizontalScrollView
-        android:id="@+id/hr_scroll_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_emojis">
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/dotsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/img_emoji_1"
+                android:id="@+id/img_customized"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/emoji1" />
+                android:src="@mipmap/image_language_activity" />
 
-            <ImageView
-                android:id="@+id/img_emoji_2"
+            <TextView
+                android:id="@+id/customise_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/img_customized"
                 android:layout_marginLeft="20dp"
-                android:src="@mipmap/emoji1" />
-        </LinearLayout>
+                android:layout_marginTop="30sp"
+                android:text="Customize Your Moods"
+                android:textSize="30sp" />
 
-    </HorizontalScrollView>
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customise_text"
+                android:layout_margin="30dp"
+                android:text="Match the color or your Mood to your personality. Later you can change emojis, names and even add new ones."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_emojis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Emojis"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/hr_emoji_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_emojis">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_emoji_1"
+                        android:layout_width="240dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/emoji1" />
+
+                    <ImageView
+                        android:id="@+id/img_emoji_2"
+                        android:layout_width="240dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/emoji1" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Colors"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/hr__color_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_emojis"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_color_1"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/color_img_1" />
+
+                    <ImageView
+                        android:id="@+id/img_color_2"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/color_img_2" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/dotsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="110dp"
         android:gravity="center"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <!--<Button
         android:id="@+id/bnNext"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginRight="30dp"
         android:background="@mipmap/arrow"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/bnSkip"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="70dp"
-        android:text="@string/back"
         android:textSize="16sp"
-        android:visibility="invisible" />
+        app:layout_constraintTop_toBottomOf="@id/dotsLayout"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-</RelativeLayout>
+       <TextView
+           android:id="@+id/bnSkip"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginBottom="70dp"
+           android:layout_marginTop="10dp"
+           android:text="@string/back"
+           android:textSize="16sp"
+           android:visibility="invisible"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/dotsLayout"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

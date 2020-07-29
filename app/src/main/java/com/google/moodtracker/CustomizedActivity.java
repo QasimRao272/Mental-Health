@@ -108,7 +108,7 @@ public class CustomizedActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void loadHome() {
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), HowAreYouActivity.class));
         finish();
     }
 
