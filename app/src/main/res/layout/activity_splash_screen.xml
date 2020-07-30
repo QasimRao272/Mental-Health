@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Mental Health"
+        android:text="Mental Health Clinic"
         android:fontFamily="@font/arialnarrow7"
         android:textSize="25sp" />
 

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/gradient_blue"
     tools:context=".WhatHveYouBeenUpToActivity">
 
     <LinearLayout
         android:id="@+id/top_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +27,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/arroe_left"
+                android:tint="#ffffff"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +37,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@mipmap/good"
+                android:tint="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/tick_mark"
                 app:layout_constraintStart_toEndOf="@id/arow_left" />
@@ -45,7 +47,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginRight="20dp"
-                android:src="@mipmap/tick_mark"
+                android:src="@mipmap/tick_mark_white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -64,6 +66,7 @@
         android:gravity="center"
         android:text="WHAT DID YOU DO ?"
         android:textSize="30dp"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top_linear_layout" />
@@ -105,6 +108,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Family"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -127,6 +131,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Friend"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -149,6 +154,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Date"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -171,6 +177,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Exercise"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -193,6 +200,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Sport"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -227,6 +235,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Sleep Early"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -249,6 +258,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Eat Healty"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -271,6 +281,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Relax"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -293,6 +304,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Movies"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
 
@@ -316,6 +328,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Reading"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -350,6 +363,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Gaming"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -372,6 +386,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Cleaning"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -394,6 +409,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:text="Shopping"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
             </LinearLayout>
@@ -405,8 +421,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
-            android:background="#D1D0D0"
+            android:background="#ffffff"
             android:hint="Add Note..."
+            android:textColorHint="#3748E7"
             android:padding="10dp" />
 
     </LinearLayout>
@@ -415,7 +432,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -442,7 +459,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Edit Moods"
-            android:textColor="#69E781"
+            android:textColor="#2C3FDA"
             android:textSize="10dp" />
 
     </LinearLayout>
@@ -451,7 +468,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -468,9 +485,9 @@
                 android:id="@+id/btn_save"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/circle_shape"
                 android:padding="5dp"
-                android:src="@mipmap/tick_mark" />
+                android:background="@drawable/circle_shape"
+                android:src="@mipmap/tick_mark_blue" />
 
         </androidx.cardview.widget.CardView>
 
@@ -479,8 +496,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Save"
-            android:textColor="#69E781"
-            android:textSize="10dp" />
+            android:textColor="#2C3FDA"
+            android:textSize="12dp" />
 
     </LinearLayout>
 
