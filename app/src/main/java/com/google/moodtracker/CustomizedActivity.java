@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 public class CustomizedActivity extends AppCompatActivity implements View.OnClickListener {
     private ViewPager mPager;
-    private int[] layouts = {R.layout.intro_screen5, R.layout.intro_screen1, R.layout.intro_screen2, R.layout.intro_screen3, R.layout.intro_screen4};
+    private int[] layouts = {R.layout.intro_screen5, R.layout.intro_screen1, R.layout.intro_screen2, R.layout.intro_screen3, R.layout.intro_screen4, R.layout.intro_screen6};
     private MPagerAdapter mPagerAdapter;
     private LinearLayout Dots_layout;
     private ImageView[] dots;
@@ -100,7 +100,6 @@ public class CustomizedActivity extends AppCompatActivity implements View.OnClic
                 loadNextSlide();
                 break;
             case R.id.bnSkip:
-                //loadHome();
                 backSlide();
                 new PrefrenceManager(this).writePrefrence();
                 break;
